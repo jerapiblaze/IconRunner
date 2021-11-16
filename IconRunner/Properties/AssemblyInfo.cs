@@ -6,11 +6,15 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("IconRunner")]
-[assembly: AssemblyDescription("A cute animated icon on your taskbar.")]
+[assembly: AssemblyDescription("A tiny-cute cpu-usage-based-speed-animated icon on your taskbar. \t" +
+    "\t\t\t\t" +
+    "Homepage: https://github.com/jerapiblaze/IconRunner \t" +
+    "Based on RunCat: https://github.com/Kyome22/RunCat_for_windows \t" +
+    "RunCat modded: https://github.com/jerapiblaze/RunCat_for_windows \t")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("IconRunner")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCopyright("jerapiblannett")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
