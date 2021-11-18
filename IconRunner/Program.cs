@@ -25,9 +25,9 @@ namespace IconRunner
 
         public class Core : ApplicationContext
         {
-            private static ToolStripMenuItem aboutMenu = new ToolStripMenuItem("About", null, aboutMenuClick);
-            private static ToolStripMenuItem settingsMenu = new ToolStripMenuItem("Settings", null, settingsMenuClick);
-            private static ToolStripMenuItem pauseAniMenu = new ToolStripMenuItem("Pause animation", null, pauseAniMenuClick);
+            private static ToolStripMenuItem aboutMenu = new ToolStripMenuItem("About", null, AboutMenuClick);
+            private static ToolStripMenuItem settingsMenu = new ToolStripMenuItem("Settings", null, SettingsMenuClick);
+            private static ToolStripMenuItem pauseAniMenu = new ToolStripMenuItem("Pause animation", null, PauseAniMenuClick);
             private static ToolStripMenuItem exitMenu = new ToolStripMenuItem("Exit", null, Exit);
 
             private static NotifyIcon notifyIcon;
@@ -71,13 +71,13 @@ namespace IconRunner
                 current = 1;
             }
 
-            private static void aboutMenuClick(object sender, EventArgs e)
+            private static void AboutMenuClick(object sender, EventArgs e)
             {
                 if (IsFormOpened("AboutForm")) return;
                 aboutBox.ShowDialog();
             }
 
-            private static void settingsMenuClick(object sender, EventArgs e)
+            private static void SettingsMenuClick(object sender, EventArgs e)
             {
                 if (IsFormOpened("SettingsForm")) return;
                 settingsBox.ShowDialog();
@@ -133,7 +133,7 @@ namespace IconRunner
                 animateTimer.Tick += new EventHandler(AnimationTick);
             }
 
-            private static void pauseAniMenuClick(object sender, EventArgs e)
+            private static void PauseAniMenuClick(object sender, EventArgs e)
             {
                 if (cpuTimer.Enabled)
                 {
