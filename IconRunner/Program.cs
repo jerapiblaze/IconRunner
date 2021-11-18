@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using IconRunner.Properties;
+﻿using IconRunner.Properties;
 using Microsoft.Win32;
-using System.Resources;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Diagnostics;
+using System.Drawing;
+using System.Resources;
+using System.Windows.Forms;
 
 namespace IconRunner
 {
@@ -60,7 +58,7 @@ namespace IconRunner
                 {
                     Icon = Resources.appIcon,
                     ContextMenuStrip = contextMenuStrip,
-                    Text = "CPU: 0.0%",
+                    Text = "0.0%",
                     Visible = true
                 };
 
@@ -141,11 +139,14 @@ namespace IconRunner
                 {
                     cpuTimer.Stop();
                     animateTimer.Stop();
+                    notifyIcon.Text = "paused";
                     pauseAniMenu.Checked = true;
-                } else
+                }
+                else
                 {
                     cpuTimer.Start();
                     animateTimer.Start();
+                    notifyIcon.Text = "resuming";
                     pauseAniMenu.Checked = false;
                 }
             }
@@ -153,7 +154,7 @@ namespace IconRunner
             private void CPUTick()
             {
                 float s = cpuUsage.NextValue();
-                notifyIcon.Text = $"CPU: {s:f1}%";
+                notifyIcon.Text = $"{s:f1}%";
                 s = Settings.Default.aniScale / (float)Math.Max(1.0f, Math.Min(20.0f, s / 10.0f));
                 animateTimer.Stop();
                 animateTimer.Interval = Settings.Default.constSpeed ? Settings.Default.aniScale : (int)s;
@@ -189,7 +190,7 @@ namespace IconRunner
 
             private static void OnApplicationExit(object sender, EventArgs e)
             {
-                
+
             }
 
             private static void Exit(object sender, EventArgs e)

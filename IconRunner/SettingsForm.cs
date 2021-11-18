@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using IconRunner.Properties;
+﻿using IconRunner.Properties;
 using Microsoft.Win32;
+using System;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace IconRunner
 {
@@ -59,7 +52,7 @@ namespace IconRunner
 
         private void SetStartup(bool enabled)
         {
-           string keyName = @"Software\Microsoft\Windows\CurrentVersion\Run";
+            string keyName = @"Software\Microsoft\Windows\CurrentVersion\Run";
             using (RegistryKey rKey = Registry.CurrentUser.OpenSubKey(keyName, true))
             {
                 if (enabled)
