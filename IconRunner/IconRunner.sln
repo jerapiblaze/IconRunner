@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconRunner", "IconRunner.csproj", "{789D0ADF-5007-42C9-89DE-F5024A6E6F61}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconRunner", "IconRunner.csproj", "{F691F165-F0EF-48CC-A5C2-7731A2C7DDD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{789D0ADF-5007-42C9-89DE-F5024A6E6F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{789D0ADF-5007-42C9-89DE-F5024A6E6F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{789D0ADF-5007-42C9-89DE-F5024A6E6F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{789D0ADF-5007-42C9-89DE-F5024A6E6F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F691F165-F0EF-48CC-A5C2-7731A2C7DDD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F691F165-F0EF-48CC-A5C2-7731A2C7DDD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F691F165-F0EF-48CC-A5C2-7731A2C7DDD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F691F165-F0EF-48CC-A5C2-7731A2C7DDD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AD742ABE-8852-4793-BD43-F72E265DDDE2}
+		SolutionGuid = {D9C78D73-262D-482F-87CF-701DB83D6142}
 	EndGlobalSection
 EndGlobal
