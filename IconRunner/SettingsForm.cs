@@ -73,6 +73,7 @@ namespace IconRunner
             Settings.Default.iconTheme = iconVariantValue.SelectedItem.ToString();
             if (Int32.TryParse(scaleValue.Text, out int aniScale))
             {
+                if (aniScale <= 0) aniScale = 800;
                 Settings.Default.aniScale = aniScale;
             }
             SetStartup(startupCheck.Checked);

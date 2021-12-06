@@ -105,7 +105,8 @@ namespace IconRunner
             this.iconPackValue.Items.AddRange(new object[] {
             "bbballele",
             "bbbele",
-            "bbbfus"});
+            "bbbfus",
+            "giele"});
             this.iconPackValue.Location = new System.Drawing.Point(108, 21);
             this.iconPackValue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.iconPackValue.Name = "iconPackValue";
